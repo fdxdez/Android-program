@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 提交要求(1)：APP 标题 = 姓名 + 学号 -->
+    <string name="app_name">heshuyu2024180411</string>
+
+    <!-- 区1：动态添加 TextView -->
+    <string name="btn_add_textview">添加 TextView</string>
+    <string name="new_text_view_item">This is a new textView:%1$d</string>
+
+    <!-- 区2：ProgramAdviser（MVC） -->
+    <string name="btn_confirm">确定</string>
+    <string name="advice_empty">请点击“确定”查询建议</string>
+    <string name="advice_unknown">未找到对应的建议</string>
+
+    <!-- 区2模型层数据：下拉框选项（对应参考图中的“新语言”） -->
+    <string-array name="program_entries">
+        <item>新语言</item>
+        <item>Android 应用开发</item>
+        <item>Web 前端开发</item>
+        <item>后端服务开发</item>
+        <item>数据分析与人工智能</item>
+    </string-array>
+
+    <!-- 区2模型层数据：每个选项对应的语言建议，与上面数组顺序一一对应 -->
+    <string-array name="program_advice">
+        <item>Kotlin</item>
+        <item>Kotlin</item>
+        <item>JavaScript</item>
+        <item>Java</item>
+        <item>Python</item>
+    </string-array>
+</resources>

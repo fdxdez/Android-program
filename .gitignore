@@ -1,15 +1,25 @@
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+# ============================================================
+# 仓库根目录 .gitignore
+# 仓库根目录 = E:\Android program，每个实验项目是它的子文件夹。
+# 各项目内部还有自己的 .gitignore（Android Studio 模板），两者叠加生效。
+# ============================================================
+
+# ---- Android / Gradle 构建产物（兜底，防止误提交几十 MB） ----
+.gradle/
+.kotlin/
+build/
+captures/
+.externalNativeBuild/
+.cxx/
 local.properties
+*.hprof
+*.apk
+*.aab
+*.iml
+
+# ---- Office / Word 打开文档时产生的临时锁文件 ----
+~$*
+
+# ---- macOS 压缩包里带来的垃圾文件 ----
+**/__MACOSX/
+**/.DS_Store

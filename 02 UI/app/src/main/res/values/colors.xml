@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!-- 区1（青色）与区2（绿色）的底色，参考界面用色 -->
+    <color name="area1_background">#FF2BE0D0</color>
+    <color name="area2_background">#FF22FF22</color>
+</resources>
