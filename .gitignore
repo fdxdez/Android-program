@@ -17,6 +17,9 @@ local.properties
 *.aab
 *.iml
 
+# ---- Android Studio 个人配置（含本机绝对路径，不应入库） ----
+**/.idea/
+
 # ---- Office / Word 打开文档时产生的临时锁文件 ----
 ~$*
 

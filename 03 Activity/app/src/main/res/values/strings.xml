@@ -1,0 +1,39 @@
+<resources>
+    <!-- 提交要求(1)：APP 标题改成你自己的姓名+学号 -->
+    <string name="app_name">heshuyu2024180411</string>
+
+    <!-- ===== MainActivity ===== -->
+    <string name="main_result_default">尚未返回任何内容</string>
+    <string name="main_result_format">返回结果：%1$s</string>
+    <string name="btn_activity1">1. 正向传参</string>
+    <string name="btn_activity2">2. 结果返回</string>
+    <string name="btn_activity3">3. 隐式 Intent 拍照</string>
+    <string name="btn_activity4">4. 秒表 StopWatch</string>
+
+    <!-- ===== Activity1：接收参数 ===== -->
+    <string name="activity1_title">Activity 1</string>
+    <string name="activity1_received_format">接收到的参数：\n%1$s</string>
+    <string name="extra_message">extra_message</string>
+    <string name="activity1_message">你好，我是从 MainActivity 正向传过来的参数！</string>
+
+    <!-- ===== Activity2：输入并返回 ===== -->
+    <string name="activity2_title">Activity 2</string>
+    <string name="activity2_hint">请输入要返回给 MainActivity 的内容</string>
+    <string name="btn_confirm">确定</string>
+    <string name="extra_result">extra_result</string>
+
+    <!-- ===== Activity3：隐式 Intent 拍照 ===== -->
+    <string name="activity3_title">Activity 3</string>
+    <string name="btn_take_photo">拍照</string>
+    <string name="photo_content_desc">拍摄的照片</string>
+    <string name="camera_not_found">未找到可用的相机应用</string>
+    <string name="photo_failed">拍照失败：未获取到照片</string>
+
+    <!-- ===== Activity4：秒表 ===== -->
+    <string name="activity4_title">Activity 4</string>
+    <string name="time_initial">00:00:00</string>
+    <string name="time_format">%1$02d:%2$02d:%3$02d</string>
+    <string name="btn_start">开始</string>
+    <string name="btn_pause">暂停</string>
+    <string name="btn_reset">重置</string>
+</resources>
