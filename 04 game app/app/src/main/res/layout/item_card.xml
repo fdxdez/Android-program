@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 单张牌的界面（View 层），由 GameActivity 动态添加到 GridLayout 中 -->
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardBackgroundColor="@color/card_back_face"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="3dp"
+    app:strokeColor="@color/card_back_edge"
+    app:strokeWidth="2dp">
+
+    <TextView
+        android:id="@+id/tvCardFace"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:importantForAccessibility="no"
+        android:text="@string/card_back_symbol"
+        android:textColor="@color/card_back_text"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+</com.google.android.material.card.MaterialCardView>
