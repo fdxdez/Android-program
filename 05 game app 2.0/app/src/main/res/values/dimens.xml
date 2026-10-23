@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 牌与牌之间的间距 -->
+    <dimen name="card_spacing">8dp</dimen>
+    <!-- 牌的最小高度，避免极端尺寸下牌被压扁 -->
+    <dimen name="card_min_height">44dp</dimen>
+    <dimen name="card_corner_radius">12dp</dimen>
+    <dimen name="card_text_size">22sp</dimen>
+
+    <!-- 按钮：最小高度 + 上下内边距，系统字体放大时按钮自己会变高，文字不会被裁掉 -->
+    <dimen name="button_min_height">52dp</dimen>
+    <dimen name="button_vertical_padding">14dp</dimen>
+    <dimen name="button_text_size">16sp</dimen>
+</resources>

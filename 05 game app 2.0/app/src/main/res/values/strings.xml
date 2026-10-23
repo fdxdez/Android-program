@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 提交要求(1)：APP 标题 = 自己的姓名 + 学号 -->
+    <string name="app_name" translatable="false">heshuyu2024180411</string>
+    <string name="app_version" translatable="false">1.0</string>
+
+    <!-- ===== 通用 ===== -->
+    <string name="menu_about">关于</string>
+    <string name="menu_restart">重新开始</string>
+    <string name="dialog_ok">确定</string>
+
+    <!-- ===== 关于对话框 ===== -->
+    <string name="about_title">关于</string>
+    <string name="about_app_line">应用名称：%1$s</string>
+    <string name="about_author_line">作者：%1$s</string>
+    <string name="about_student_id_line">学号：%1$s</string>
+    <string name="about_version_line">版本：%1$s</string>
+    <string name="about_rules_title">玩法说明</string>
+    <string name="about_rules_content">1. 牌桌由 RecyclerView 排列，竖屏 24 张牌、横屏 27 张牌；\n2. 三张点数相同的牌可以配成一组；\n3. 每翻开一张牌扣 1 分，配对成功加 12 分，配对失败扣 2 分；\n4. 把牌桌上的牌全部配对即获胜。</string>
+
+    <!-- ===== 主界面 ===== -->
+    <string name="main_subtitle_format">学号 %1$s</string>
+    <string name="label_gender">性别</string>
+    <string name="label_phone">电话</string>
+    <string name="label_high_score">当前最高分</string>
+    <string name="score_value_format">%1$d 分</string>
+    <string name="high_score_empty">0 分（暂无记录）</string>
+    <string name="btn_edit_info">修改个人信息</string>
+    <string name="btn_start_game">开始翻牌游戏</string>
+    <string name="main_tip">玩法：牌桌由 RecyclerView 排列，竖屏 24 张牌、横屏 27 张牌。三张点数相同的牌配成一组，每翻开一张牌扣 1 分，配对成功加 12 分，配对失败扣 2 分，全部配对即获胜。</string>
+    <string name="main_unknown">未填写</string>
+    <string name="avatar_placeholder">?</string>
+
+    <!-- ===== 修改个人信息界面 ===== -->
+    <string name="edit_title">修改个人信息</string>
+    <string name="label_name">姓名</string>
+    <string name="label_phone_input">电话</string>
+    <string name="label_gender_choice">性别</string>
+    <string name="gender_male">男</string>
+    <string name="gender_female">女</string>
+    <string name="phone_helper">请输入 11 位手机号</string>
+    <string name="name_helper">修改后的信息会立即显示在主界面</string>
+    <string name="btn_save">保存</string>
+    <string name="btn_cancel">取消</string>
+    <string name="error_name_empty">姓名不能为空</string>
+    <string name="error_phone_empty">电话不能为空</string>
+    <string name="error_phone_invalid">请输入 11 位数字的手机号</string>
+    <string name="toast_info_saved">个人信息已更新</string>
+
+    <!-- ===== 翻牌游戏界面 ===== -->
+    <string name="game_title">翻牌游戏</string>
+    <string name="stat_score">分数</string>
+    <string name="stat_flips">翻牌次数</string>
+    <string name="stat_sets">配对进度</string>
+    <string name="number_format">%1$d</string>
+    <string name="sets_value_format">%1$d / %2$d</string>
+    <string name="status_ready">点击任意一张牌开始游戏</string>
+    <string name="status_pick_second">继续翻牌，三张点数相同即可配对</string>
+    <string name="status_matched">三张牌配对成功，继续加油！</string>
+    <string name="status_mismatch">三张牌点数不同，即将翻回背面</string>
+    <string name="status_flipped_back">这张牌已经翻回背面</string>
+    <string name="status_win">全部配对完成！</string>
+    <string name="card_back_symbol">?</string>
+    <string name="card_desc_back">第 %1$d 张牌，背面</string>
+    <string name="card_desc_front">第 %1$d 张牌，%2$s</string>
+    <string name="card_desc_matched">第 %1$d 张牌，%2$s，已配对</string>
+    <string name="board_desc_format">牌桌，共 %1$d 张牌</string>
+    <string name="dialog_win_title">恭喜完成！</string>
+    <string name="dialog_win_message">本局得分：%1$d 分\n历史最高分：%2$d 分</string>
+    <string name="dialog_new_record">本次刷新了最高分纪录！</string>
+    <string name="dialog_win_positive">再来一局</string>
+    <string name="dialog_win_negative">返回主界面</string>
+</resources>
