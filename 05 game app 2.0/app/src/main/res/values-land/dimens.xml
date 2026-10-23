@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 横屏时牌更小、更紧凑 -->
+    <dimen name="card_spacing">6dp</dimen>
+    <dimen name="card_text_size">16sp</dimen>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 横屏：9 列 × 3 行 = 27 张牌（9 组），横屏更宽，可以显示更多牌 -->
+    <integer name="game_columns">9</integer>
+    <integer name="game_card_count">27</integer>
+</resources>

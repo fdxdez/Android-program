@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 竖屏：4 列 × 6 行 = 24 张牌（8 组），与实验要求的 24 张牌一致 -->
+    <integer name="game_columns">4</integer>
+    <integer name="game_card_count">24</integer>
+</resources>

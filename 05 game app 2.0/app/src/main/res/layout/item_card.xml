@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 单张牌的界面（View 层），由 CardAdapter 填充到 RecyclerView 中 -->
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardRoot"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/card_min_height"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardBackgroundColor="@color/card_back_face"
+    app:cardCornerRadius="@dimen/card_corner_radius"
+    app:cardElevation="2dp"
+    app:strokeColor="@color/card_back_edge"
+    app:strokeWidth="2dp">
+
+    <TextView
+        android:id="@+id/tvCardFace"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:importantForAccessibility="no"
+        android:text="@string/card_back_symbol"
+        android:textColor="@color/card_back_text"
+        android:textSize="@dimen/card_text_size"
+        android:textStyle="bold" />
+
+</com.google.android.material.card.MaterialCardView>
