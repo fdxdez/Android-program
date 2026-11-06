@@ -1,0 +1,41 @@
+06 Fragment（实验六 多Fragment应用）截图索引
+==================================================
+一、代码截图（截图\代码截图）—— 取自项目真实源码，带行号与语法高亮
+   01-GameFileStore-对象序列化存储.kt.png
+       data/GameFileStore.kt 第 20–70 行。实验六核心：openFileOutput +
+       ObjectOutputStream.writeObject 写文件，openFileInput + ObjectInputStream.readObject
+       读文件，文件不存在/损坏/找不到类统一返回 null
+   02-TwoCardGame-两张牌游戏模型.kt.png
+       data/TwoCardGame.kt 第 18–64 行。两张牌游戏 Model，整体实现 Serializable，
+       用于发牌的 Random 用 @Transient 标注
+   03-TwoCardGame-翻牌与配对逻辑.kt.png
+       data/TwoCardGame.kt 第 121–164 行。chooseCardAtIndex：配对成功 +4 分、
+       失败 -2 分、每选一张 -1 分，越界与重复点击被忽略
+   04-MainActivity-Fragment切换.kt.png
+       MainActivity.kt 第 56–105 行。BottomNavigationView +
+       FragmentTransaction 的 add / show / hide 切换 3 个 Fragment
+   05-TwoCardGameFragment-存档与恢复.kt.png
+       TwoCardGameFragment.kt 第 46–108 行。onCreate 读文件恢复（并清理等待翻回的
+       中间状态），点击牌面按 ActionResult 刷新牌桌，配对失败延时 900ms 翻回
+   06-TwoCardGameFragment-结算与保存.kt.png
+       TwoCardGameFragment.kt 第 132–168 行。一局结束弹结算对话框并把游戏对象
+       序列化写回文件，onPause 时也保存一次
+
+二、应用运行截图（截图\应用运行截图）—— Pixel 6 API 35 模拟器（1080×2400）实际运行截图
+   01-个人信息Fragment-运行界面.png
+       第 1 个 Fragment：头像、姓名/学号/性别/电话，标题栏为 heshuyu2024180411
+   02-两张牌游戏Fragment-翻牌与配对.png
+       第 2 个 Fragment：16 张牌 = 8 对，已配对 1 对（绿色高亮），
+       牌面翻开一张黑桃 8，分数 -7、翻牌 7 次
+   03-三张牌游戏Fragment-三张同点数配对.png
+       第 3 个 Fragment：24 张牌 = 8 组（6 列 × 4 行），牌面 红桃A / 方块3 已翻开，
+       状态栏提示「继续翻牌，三张点数相同即可配对」，配对进度 0 / 8 组
+
+三、实验报告（同目录下）
+   实验六+多Fragment应用（已填写）.docx
+       「三．实验核心代码截图和说明…」已插入上面 6 张代码图 + 3 张运行截图，
+       每张图都有图注与说明；「四．实验结果的分析与评价」已填写
+
+说明：代码截图由项目真实源码渲染（带行号与语法高亮），行号与源文件一致；
+      界面图均为模拟器（Pixel 6 API 35，1080×2400，420dpi）实际运行截图，
+      用 adb exec-out screencap 抓取，不是合成图。

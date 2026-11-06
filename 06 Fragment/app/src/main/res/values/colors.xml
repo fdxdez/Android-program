@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- ===== 牌桌配色 ===== -->
+    <color name="card_back_face">#FF3F51B5</color>
+    <color name="card_back_edge">#FF283593</color>
+    <color name="card_back_text">#FFFFFFFF</color>
+
+    <color name="card_front_face">#FFFFFFFF</color>
+    <color name="card_front_edge">#FFBDBDBD</color>
+
+    <color name="card_matched_face">#FFE8F5E9</color>
+    <color name="card_matched_edge">#FF66BB6A</color>
+    <color name="card_matched_text">#FF2E7D32</color>
+
+    <color name="suit_red">#FFD32F2F</color>
+    <color name="suit_black">#FF212121</color>
+
+    <!-- ===== 个人信息头像 ===== -->
+    <color name="avatar_background">#FF3F51B5</color>
+    <color name="avatar_text">#FFFFFFFF</color>
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 提交要求(1)：APP 标题 = 自己的姓名 + 学号 -->
+    <string name="app_name" translatable="false">heshuyu2024180411</string>
+
+    <!-- ===== 底部导航 ===== -->
+    <string name="nav_profile">个人信息</string>
+    <string name="nav_two_card">两张牌游戏</string>
+    <string name="nav_three_card">三张牌游戏</string>
+
+    <!-- ===== 个人信息 Fragment ===== -->
+    <string name="profile_title">个人信息</string>
+    <string name="profile_tip">信息采用对象序列化保存在应用私有文件中（openFileOutput / ObjectInputStream），退出应用后重新打开会自动恢复。</string>
+    <string name="profile_avatar_placeholder">?</string>
+    <string name="label_name">姓名</string>
+    <string name="label_student_id">学号</string>
+    <string name="label_phone">电话</string>
+    <string name="label_gender">性别</string>
+    <string name="gender_male">男</string>
+    <string name="gender_female">女</string>
+    <string name="btn_save">保存</string>
+    <string name="btn_reload">读取已保存信息</string>
+    <string name="profile_saved">个人信息已保存到文件</string>
+    <string name="profile_save_failed">保存失败，请重试</string>
+    <string name="profile_loaded">已从文件读回上次保存的信息</string>
+    <string name="profile_no_record">还没有保存记录，显示的是默认信息</string>
+    <string name="error_name_empty">姓名不能为空</string>
+    <string name="error_phone_empty">电话不能为空</string>
+    <string name="error_phone_invalid">请输入 11 位数字的手机号</string>
+
+    <!-- ===== 翻牌游戏公共部分 ===== -->
+    <string name="stat_score">分数</string>
+    <string name="stat_flips">翻牌次数</string>
+    <string name="stat_pairs">配对进度</string>
+    <string name="number_format">%1$d</string>
+    <string name="pairs_value_format">%1$d / %2$d 对</string>
+    <string name="sets_value_format">%1$d / %2$d 组</string>
+    <string name="btn_restart">重新开始</string>
+    <string name="status_ready">点击任意一张牌开始游戏</string>
+    <string name="status_pick_second">继续翻牌，两张点数相同即可配对</string>
+    <string name="status_pick_third">继续翻牌，三张点数相同即可配对</string>
+    <string name="status_matched_pair">两张牌配对成功，继续加油！</string>
+    <string name="status_matched_set">三张牌配对成功，继续加油！</string>
+    <string name="status_mismatch">两张牌点数不同，即将翻回背面</string>
+    <string name="status_mismatch_set">三张牌点数不同，即将翻回背面</string>
+    <string name="status_flipped_back">这张牌已经翻回背面</string>
+    <string name="status_win">全部配对完成！</string>
+    <string name="board_desc_format">牌桌，共 %1$d 张牌</string>
+    <string name="card_back_symbol">?</string>
+    <string name="card_desc_back">第 %1$d 张牌，背面</string>
+    <string name="card_desc_front">第 %1$d 张牌，%2$s</string>
+    <string name="card_desc_matched">第 %1$d 张牌，%2$s，已配对</string>
+    <string name="dialog_win_title">恭喜完成！</string>
+    <string name="dialog_win_message">本局得分：%1$d 分\n历史最高分：%2$d 分\n翻牌次数：%3$d 次</string>
+    <string name="dialog_win_positive">再来一局</string>
+    <string name="dialog_win_negative">关闭</string>
+</resources>

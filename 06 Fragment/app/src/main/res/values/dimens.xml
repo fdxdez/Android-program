@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 牌与牌之间的间距 -->
+    <dimen name="card_spacing">6dp</dimen>
+    <!-- 牌的最小高度，屏幕空间不足时不会把牌压得太小 -->
+    <dimen name="card_min_height">56dp</dimen>
+    <!-- 牌的圆角 -->
+    <dimen name="card_corner_radius">10dp</dimen>
+    <!-- 牌面文字大小 -->
+    <dimen name="card_text_size">18sp</dimen>
+    <!-- 个人信息头像大小 -->
+    <dimen name="avatar_size">72dp</dimen>
+</resources>
