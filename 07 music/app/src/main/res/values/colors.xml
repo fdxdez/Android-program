@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- 播放器主色 -->
+    <color name="player_primary">#FF6750A4</color>
+
+    <!-- 歌曲标题：普通 / 正在播放（正在播放由 track_title_color 选择器使用主色） -->
+    <color name="track_title_normal">#FF1D1B20</color>
+</resources>

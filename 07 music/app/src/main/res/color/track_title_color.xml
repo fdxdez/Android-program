@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 歌曲标题颜色：正在播放（isActivated）时用主题主色高亮 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_activated="true" android:color="@color/player_primary" />
+    <item android:color="@color/track_title_normal" />
+</selector>

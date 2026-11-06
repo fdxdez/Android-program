@@ -26,3 +26,7 @@ local.properties
 # ---- macOS 压缩包里带来的垃圾文件 ----
 **/__MACOSX/
 **/.DS_Store
+
+# ---- 本机生成实验报告时用的临时工作目录（脚本、渲染中间产物、原报告备份） ----
+.dsh_work/
+.dsh-office-*/

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 歌曲列表界面右上角菜单：重新扫描媒体库 -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_rescan"
+        android:icon="@drawable/ic_refresh"
+        android:title="@string/action_rescan"
+        app:showAsAction="ifRoom" />
+</menu>
