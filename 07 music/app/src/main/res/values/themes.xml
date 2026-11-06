@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- 基础主题：Material 3，无 ActionBar（标题栏由布局中的 MaterialToolbar 提供，显示「姓名+学号」） -->
+    <style name="Base.Theme.Music" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/player_primary</item>
+    </style>
+
+    <style name="Theme.Music" parent="Base.Theme.Music" />
+</resources>

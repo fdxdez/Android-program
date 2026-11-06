@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 「正在播放」标记的颜色：没有播放时透明（视觉上不显示） -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_activated="true" android:color="@color/player_primary" />
+    <item android:color="@android:color/transparent" />
+</selector>

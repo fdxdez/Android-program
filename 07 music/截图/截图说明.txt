@@ -1,0 +1,43 @@
+07 music（实验七 基于Service的音乐播放应用）截图索引
+==================================================
+一、代码截图（截图\代码截图）—— 取自项目真实源码，带行号与语法高亮
+   01-MusicPlayerService-播放服务核心.kt.png
+       MusicPlayerService.kt 第 43–106 行。inner class MusicBinder 把服务实例暴露给
+       Activity；progressTask 用主线程 Handler 每 500ms 轮询进度并回调给界面
+   02-MusicPlayerService-播放控制与MediaPlayer.kt.png
+       MusicPlayerService.kt 第 200–262 行。stopPlayback / seekTo / startCurrent：
+       MediaPlayer + AudioAttributes，prepareAsync 就绪后播放，放完自动下一首
+   03-MusicPlayerService-通知栏与前台服务.kt.png
+       MusicPlayerService.kt 第 280–340 行。通知渠道 + buildNotification：
+       标题显示当前歌曲名，带「上一首 / 播放暂停 / 下一首」三个按钮
+   04-MediaStoreHelper-ContentResolver查询.kt.png
+       MediaStoreHelper.kt 第 34–79 行。contentResolver 查询 MediaStore.Audio.Media，
+       IS_MUSIC != 0 过滤，捕获 SecurityException 返回空列表
+   05-MainActivity-绑定服务与进度回调.kt.png
+       MainActivity.kt 第 61–104 行。ServiceConnection 拿到 Binder 并注册
+       progressCallback，绑定后把歌曲列表同步给服务
+   06-MainActivity-拖动SeekBar与实时进度.kt.png
+       MainActivity.kt 第 229–295 行。startForegroundService + bindService（按版本兼容），
+       onProgress 刷新 SeekBar，拖动时用 isUserSeeking 避免「拖不动」
+
+二、应用运行截图（截图\应用运行截图）—— Pixel 6 API 35 模拟器（1080×2400）实际运行截图
+   01-主界面-扫描出歌曲列表.png
+       contentResolver 扫描到 4 首音频，列表显示歌名与时长
+   02-播放中-SeekBar实时进度.png
+       正在播放 qing-tian（4:28），进度 0:10 实时走动（多线程每 500ms 刷新），
+       按钮变为暂停图标，「正在播放」标记与列表高亮同步
+   03-拖动SeekBar调整播放进度.png
+       手动拖动 SeekBar 后播放位置被 seekTo 到新的位置
+   04-通知栏显示当前播放歌曲.png
+       前台服务通知显示当前歌曲名、歌手，并带「上一首 / 暂停 / 下一首」三个按钮
+   05-Android13申请READ_MEDIA_AUDIO权限.png
+       Android 13+ 首次运行申请音频读取权限的系统对话框
+
+三、实验报告（同目录下）
+   实验七+基于Service的音乐播放应用（已填写）.docx
+       「三．实验核心代码截图和说明…」已插入上面 6 张代码图 + 5 张运行截图，
+       每张图都有图注与说明；「四．实验结果的分析与评价」已填写
+
+说明：代码截图由项目真实源码渲染（带行号与语法高亮），行号与源文件一致；
+      界面图均为模拟器（Pixel 6 API 35，1080×2400，420dpi）实际运行截图，
+      用 adb exec-out screencap 抓取，不是合成图。
