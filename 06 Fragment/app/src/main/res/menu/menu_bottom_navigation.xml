@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 底部导航菜单：3 个 Fragment 对应 3 个菜单项 -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_person"
+        android:title="@string/nav_profile" />
+    <item
+        android:id="@+id/nav_two_card"
+        android:icon="@drawable/ic_cards_two"
+        android:title="@string/nav_two_card" />
+    <item
+        android:id="@+id/nav_three_card"
+        android:icon="@drawable/ic_cards_three"
+        android:title="@string/nav_three_card" />
+</menu>
