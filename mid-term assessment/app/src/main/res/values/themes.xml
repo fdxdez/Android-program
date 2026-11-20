@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MidtermAssessment" parent="Theme.Material3.Light.NoActionBar">
+        <!-- 主题色 -->
+        <item name="colorPrimary">@color/brand_primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/brand_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/brand_on_primary_container</item>
+
+        <!-- 界面底色 -->
+        <item name="android:windowBackground">@color/app_bg</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+    </style>
+
+    <style name="Theme.MidtermAssessment" parent="Base.Theme.MidtermAssessment" />
+</resources>
