@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- 主题配色 -->
+    <color name="primary">#2F6BFF</color>
+    <color name="primary_deep">#1E48C8</color>
+    <color name="primary_light">#7FC7FF</color>
+    <color name="page_bg">#F2F5FA</color>
+    <color name="card_bg">#FFFFFFFF</color>
+    <color name="text_main">#1B2433</color>
+    <color name="text_sub">#7C879B</color>
+    <color name="text_divider">#E6EBF3</color>
+    <color name="search_bg">#EDF1F8</color>
+    <color name="chip_bg">#E7EEFF</color>
+</resources>
