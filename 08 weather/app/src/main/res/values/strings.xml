@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">heshuyu2024180411</string>
+    <string name="app_subtitle">Android 网络天气应用 · 全国城市天气查询</string>
+    <string name="search_hint">搜索城市或省份，如：成都 / 四川</string>
+    <string name="weather_title">heshuyu2024180411 · 天气详情</string>
+    <string name="loading_city">正在解析本地城市列表…</string>
+    <string name="error_city">城市列表解析失败，请稍后重试</string>
+    <string name="no_result">没有找到匹配的城市</string>
+</resources>
