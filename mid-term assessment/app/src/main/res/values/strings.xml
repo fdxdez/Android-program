@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">学习信息管理</string>
+
+    <!-- 第 1 个 Activity：学生列表 -->
+    <string name="main_title">何姝玙2024180411</string>
+    <string name="list_header">学生列表</string>
+    <string name="student_count">共 %1$d 人</string>
+    <string name="empty_hint">暂无学生信息\n点击右下角“添加学生”按钮开始录入</string>
+    <string name="fab_add_student">添加学生</string>
+    <string name="item_student_info">学号 %1$s · %2$s</string>
+    <string name="student_added">已添加学生：%1$s</string>
+    <string name="student_duplicated">学号 %1$s 已存在，无法重复添加</string>
+
+    <!-- 第 2 个 Activity：新增学生 -->
+    <string name="add_title">添加学生信息</string>
+    <string name="hint_student_id">学号</string>
+    <string name="hint_name">姓名</string>
+    <string name="hint_class">班级</string>
+    <string name="label_gender">性别</string>
+    <string name="gender_male">男</string>
+    <string name="gender_female">女</string>
+    <string name="action_confirm">确定</string>
+    <string name="action_cancel">取消</string>
+    <string name="form_tip">提示：学号只能由数字组成，且不能与列表中已有的学号重复。</string>
+    <string name="error_student_id_empty">请输入学号</string>
+    <string name="error_student_id_format">学号只能由 6~20 位数字组成</string>
+    <string name="error_student_id_duplicated">该学号已存在，请重新输入</string>
+    <string name="error_name_empty">请输入姓名</string>
+    <string name="error_class_empty">请输入班级</string>
+
+    <!-- 无障碍描述 -->
+    <string name="desc_empty_icon">空列表图标</string>
+</resources>
